@@ -913,6 +913,11 @@ header {
         overflow: visible;
     }
 	
+	.logo img {
+    width: 120px;
+    height: auto;
+}
+	
 /* Hide slide navigation in vertical layout */
 .slide-navigation,
 .services-navigation {
