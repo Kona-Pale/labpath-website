@@ -1497,13 +1497,15 @@ header {
 }
 	/* SERVICES — iPad LANDSCAPE */
 
+/* TABLET LANDSCAPE — SERVICES BUTTON SPACING */
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-    .services-row {
-        align-items: start;
-    }
-
     .services-row .service-item {
         height: auto;
-    	}
-	}
+    }
+
+    .services-row .service-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 }
