@@ -1218,15 +1218,24 @@ header {
 
 @media (max-width: 1080px) {
     .contact-slide {
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        min-height: 100svh;
+        padding: 0;
+    }
+
+    .contact-content {
+        flex: 1 0 auto;
+        height: auto;
+        min-height: 0;
     }
 
     .site-footer {
-        margin-bottom: 0 !important;
-    }
-
-    .contact-video {
-        height: 100%;
+        position: relative;
+        bottom: auto;
+        margin-top: auto;
+        flex: 0 0 auto;
     }
 }
