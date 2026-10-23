@@ -1466,14 +1466,18 @@ header {
     }
 }
 	
-	/* SERVICES BUTTON — MOBILE FIX */
+/* SERVICES BUTTON — TABLET & MOBILE FIX */
 
 @media screen and (max-width: 768px) {
+    .services-row .service-item {
+        height: auto;
+    }
+
     .services-row .service-button {
         width: 100%;
         max-width: 275px;
-        margin-top: auto;
-        margin-bottom: 65px;
+        margin-top: 20px;
+        margin-bottom: 0;
         box-sizing: border-box;
     }
 
@@ -1490,5 +1494,5 @@ header {
         text-align: center;
         line-height: 1.4;
     }
-}
+	}
 }
