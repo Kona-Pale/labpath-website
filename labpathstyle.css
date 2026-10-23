@@ -913,6 +913,14 @@ header {
         overflow: visible;
     }
 	
+	.contact-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100svh;
+    padding-bottom: 0;
+}
+	
 	.logo img {
     width: 120px;
     height: auto;
@@ -1149,10 +1157,9 @@ header {
     transform: translateX(50%);
 }
 
-/* Close the 1080px media query here */
+
 }
 
-/* Smaller screens */
 
 /* Smaller screens */
 
