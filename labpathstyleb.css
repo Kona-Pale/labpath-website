@@ -856,18 +856,20 @@ header {
 
 /* TABLET */
 
-@media (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 900px) {
     .services-row {
         gap: 36px;
         padding: 85px 40px;
+        align-items: start;
     }
 
     .services-row .service-item {
         height: auto;
+        align-self: start;
     }
 
     .services-row .service-button {
-        margin-top: 20px;
+        margin-top: 28px;
         margin-bottom: 0;
     }
 }
@@ -891,7 +893,7 @@ header {
     }
 
     .service-description {
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
 
     .section-video {
@@ -902,6 +904,7 @@ header {
 		margin-bottom: 65px;
 		white-space: normal;
 		overflow-wrap: break-word;
+		margin-top: 0;
 	}
 }
 
