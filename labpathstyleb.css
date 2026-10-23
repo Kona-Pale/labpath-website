@@ -1494,5 +1494,16 @@ header {
         text-align: center;
         line-height: 1.4;
     }
+}
+	/* SERVICES — iPad LANDSCAPE */
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+    .services-row {
+        align-items: start;
+    }
+
+    .services-row .service-item {
+        height: auto;
+    	}
 	}
 }
