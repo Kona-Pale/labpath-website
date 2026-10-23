@@ -913,13 +913,7 @@ header {
         overflow: visible;
     }
 	
-	.contact-slide {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    min-height: 100svh;
-    padding-bottom: 0;
-}
+	
 	
 	.logo img {
     width: 120px;
@@ -1111,6 +1105,15 @@ header {
 .why-choose-slide + .why-choose-slide {
     padding-bottom: 100px;
 }
+
+/* Contact section — mobile and tablet */
+
+.contact-content {
+    height: auto;
+    min-height: 100svh;
+    padding: 120px 24px 40px;
+    box-sizing: border-box;
+}	
 	
 	
 /* Footer — mobile and tablet */
