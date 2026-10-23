@@ -876,6 +876,8 @@ header {
 	
 	.service-button {
 		margin-bottom: 65px;
+		white-space: normal;
+		overflow-wrap: break-word;
 	}
 }
 
@@ -1442,7 +1444,7 @@ header {
         max-width: 320px;
         box-sizing: border-box;
         margin-top: 0;
-        padding: 14px 10px;
+        padding: 14px 15px;
         text-align: center;
         white-space: normal;
 		overflow-wrap: break-word;
