@@ -1363,7 +1363,13 @@ header {
 }
 
 @media (max-width: 1080px) {
-    .site-footer {
+    .logo img {
+    width: 150px;
+    height: auto;
+}
+	
+	
+	.site-footer {
         height: auto;
         grid-template-columns: 1fr;
         gap: 8px;
