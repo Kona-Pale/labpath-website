@@ -1215,3 +1215,26 @@ header {
 		font-size: 1.1rem;
 	}
 }
+
+@media (max-width: 1080px) {
+    .contact-slide {
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
+        height: auto;
+        overflow: visible;
+        padding-bottom: 0;
+    }
+
+    .contact-content {
+        flex: 1 0 auto;
+        height: auto;
+        min-height: 0;
+    }
+
+    .site-footer {
+        position: relative;
+        flex: 0 0 auto;
+        margin-top: 0;
+    }
+}
