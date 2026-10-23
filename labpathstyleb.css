@@ -822,6 +822,21 @@ header {
     transition-delay: 1s;
 }
 
+.service-button {
+    width: 275px;
+    max-width: 100%;
+}
+
+.service-button .btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+    line-height: 1.4;
+}
+
 /* REUSABLE FULL-WIDTH VIDEO */
 
 .section-video {
