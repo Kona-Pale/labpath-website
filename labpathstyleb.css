@@ -1497,17 +1497,17 @@ header {
 }
 	/* SERVICES — iPad LANDSCAPE */
 
-/* TABLET LANDSCAPE — SERVICES BUTTON ALIGNMENT */
 @media screen and (min-width: 769px) and (max-width: 1080px) {
     .services-row .service-item {
         height: auto;
-        display: flex;
-        flex-direction: column;
+    }
+
+    .services-row .service-description {
+        flex: 1;
     }
 
     .services-row .service-button {
-        margin-top: auto;
+        margin-top: 0;
         margin-bottom: 0;
     }
-}
 }
