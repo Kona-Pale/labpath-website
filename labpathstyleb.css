@@ -861,6 +861,15 @@ header {
         gap: 36px;
         padding: 85px 40px;
     }
+
+    .services-row .service-item {
+        height: auto;
+    }
+
+    .services-row .service-button {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 }
 
 /* PHONE */
