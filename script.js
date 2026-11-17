@@ -328,13 +328,6 @@ document.addEventListener("DOMContentLoaded", () => {
             desc: "A global campaign that advocates for men's health issues.",
             type: "global"
         },
-
-		{
-            date: "2026-11-25",
-            title: "16 Days of Activism against Gender-Based Violence",
-            desc: "Advocating for the elimination of violence against women and girls.",
-            type: "global"
-        },
 		
 		
 		{
