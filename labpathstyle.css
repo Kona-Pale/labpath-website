@@ -513,6 +513,8 @@ header {
 
 .services-contact {
     display: none;
+	margin-bottom: 115px;
+	margin-top: 35px;
 }
 
 .services-content {
@@ -1238,4 +1240,439 @@ header {
         margin: 0;
         align-self: stretch;
     }
+}
+
+/* =========================================
+   LATEST NEWS SLIDE
+========================================= */
+
+.latest-news-slide {
+    background: #F6F7F4;
+    color: #1D2A2B;
+    overflow: hidden;
+}
+
+/* Main content container */
+
+.latest-news-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 8% 85px;
+}
+
+.news-feature {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 24px 28px;
+    background: #FFFFFF;
+    border: 1px solid #D9DFDB;
+    box-sizing: border-box;
+}
+
+/* Featured month and introduction */
+
+.news-feature-content {
+    min-width: 0;
+}
+
+.news-month {
+    margin: 0 0 8px;
+    color: #F4A261;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.news-feature-content h2 {
+    margin: 0 0 12px;
+    color: #382D44;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.news-feature-blurb {
+    margin: 0 0 20px;
+    color: #5B6A6B;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   UPCOMING DATES
+========================================= */
+
+.news-upcoming {
+    margin-top: 18px;
+}
+
+.news-upcoming h3 {
+    margin: 0 0 12px;
+    color: #382D44;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Filter buttons */
+
+.news-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.news-toolbar button {
+    padding: 7px 15px;
+    border: 1px solid #D9D3E3;
+    background: #FFFFFF;
+    color: #382D44;
+    font-family: "Overpass Mono", monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.news-toolbar button:hover,
+.news-toolbar button[aria-pressed="true"] {
+    background: #F4A261;
+    border-color: #F4A261;
+    color: #382D44;
+}
+
+
+/* Latest News slide navigation buttons */
+
+.news-toolbar .slide-previous,
+.news-toolbar .slide-next {
+    padding: 7px 15px;
+    border: 1px solid #D9D3E3;
+    background: #FFFFFF;
+    color: #382D44;
+    font-family: "Overpass Mono", monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.news-toolbar .slide-previous:hover,
+.news-toolbar .slide-next:hover {
+    background: #F4A261;
+    border-color: #F4A261;
+    color: #382D44;
+}
+
+
+/* Compact upcoming dates */
+
+.news-events {
+    margin: 0;
+    color: #5B6A6B;
+    font-size: 0.78rem;
+    line-height: 1.7;
+}
+
+.news-events a {
+    color: #382D44;
+    text-decoration: none;
+}
+
+.news-events a:hover {
+    color: #F4A261;
+}
+
+
+/* =========================================
+   CALENDAR
+========================================= */
+
+.news-calendar {
+    min-width: 0;
+    height: 390px;
+    padding: 16px;
+    background: #F6F7F4;
+    border: 1px solid #D9DFDB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Calendar heading and month navigation */
+
+.news-calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.news-calendar-header h3 {
+    margin: 0;
+    color: #382D44;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.news-calendar-header button {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    border: 1px solid #D9D3E3;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #382D44;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.news-calendar-header button:hover {
+    background: #F4A261;
+    border-color: #F4A261;
+    color: #382D44;
+}
+
+/* Calendar grid */
+
+.news-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+    height: 225px;
+    flex: 0 0 225px;
+    text-align: center;
+}
+
+.news-calendar-grid .weekday {
+    padding: 6px 0;
+    color: #5B6A6B;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.news-calendar-grid .day {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    padding: 3px 2px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    color: #1D2A2B;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.news-calendar-grid .day:hover {
+    background: #FCE4D0;
+}
+
+.news-calendar-grid .day.has-event {
+    background: #FCE4D0;
+    color: #382D44;
+    font-weight: 700;
+}
+
+.news-calendar-grid .day.selected {
+    background: #F4A261;
+    color: #382D44;
+    border-color: #F4A261;
+}
+
+.news-calendar-grid .day.today {
+    border-color: #382D44;
+}
+
+.news-calendar-grid .day:focus-visible,
+.news-calendar-header button:focus-visible {
+    outline: 2px solid #382D44;
+    outline-offset: 2px;
+}
+
+/* Event indicators */
+
+.news-calendar-grid .day .dot {
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 2px auto 0;
+    border-radius: 50%;
+    background: #F4A261;
+}
+
+.news-calendar-grid .day.local .dot {
+    background: #382D44;
+}
+
+.news-calendar-grid .day.selected .dot {
+    background: #FFFFFF;
+}
+
+/* Calendar legend */
+
+.news-calendar-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 14px;
+    color: #5B6A6B;
+    font-size: 0.75rem;
+}
+
+.news-calendar-legend span::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: #F4A261;
+}
+
+.news-calendar-legend .news-local-legend::before {
+    background: #382D44;
+}
+
+/* Selected date details */
+
+.news-calendar-detail {
+    min-height: 35px;
+    max-height: 55px;
+    margin-top: 10px;
+    padding: 8px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border-left: 3px solid #F4A261;
+    color: #5B6A6B;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+.news-calendar-detail strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #382D44;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.news-calendar-detail p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   LATEST NEWS - STANDARD DESKTOP SCREENS
+========================================= */
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+
+    #latest-news-slide .news-feature {
+        transform: translateY(60px);
+    }
+
+}
+
+
+/* =========================================
+   TABLET AND MOBILE
+========================================= */
+
+@media (max-width: 1080px) {
+
+    .latest-news-slide {
+        height: auto;
+        min-height: 100vh;
+        min-height: 100svh;
+        overflow: visible;
+    }
+
+    .latest-news-content {
+        height: auto;
+        padding: 105px 6% 45px;
+    }
+
+    .news-feature {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .news-feature-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .news-calendar {
+        width: 100%;
+    }
+
+    #latest-news-slide .slide-navigation {
+        display: none;
+    }
+	
+	#latest-news-slide .news-toolbar .slide-previous,
+	#latest-news-slide .news-toolbar .slide-next {
+    	display: none;
+	}
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .latest-news-content {
+        padding: 95px 20px 40px;
+    }
+
+    .news-feature {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .news-feature-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .news-calendar {
+        padding: 15px;
+    }
+
+    .news-calendar-grid {
+        gap: 3px;
+    }
+
+    .news-calendar-grid .day {
+        min-height: 32px;
+        font-size: 0.75rem;
+    }
+
+    .news-toolbar {
+        gap: 6px;
+    }
+
+    .news-toolbar button {
+        padding: 7px 12px;
+    }
+
 }
